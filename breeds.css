@@ -398,8 +398,14 @@ form:hover .fa {
 .card_details{
     background-color: #ffffff7f;
     padding: 5px;
+    height: 9rem;
     margin:5px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.breed__description{
+    font-size: x-small;
 }
 
 .breed__title{

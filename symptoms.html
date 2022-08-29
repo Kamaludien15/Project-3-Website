@@ -18,7 +18,7 @@
             <header class="header" id="header">
                 <nav class="nav container">
 
-                    <a href="index.html" class="nav__logo">Placeholder</a>
+                    <a href="index.html" class="nav__logo">PetsDB</a>
 
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list grid">
@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="about_us.hml" class="nav__link ">
+                                <a href="about_us.html" class="nav__link ">
                                     <i class="uil uil-scenery nav__icon"></i> About Us
                                 </a>
                             </li>
@@ -66,25 +66,46 @@
             <main class="main">
 
                 <!--Breed-->
+                <script>
+                    window.onload = function() {
+                        loadDogBreedData();
+                    };
+                </script>
                 <section class="breed section" id="breed">
                     <div class="breed__container container grid">
                         <div class="breed__content grid">
 
                             <div class="breed_image">
-                                <img src="Resources/Placeholder.png"  alt="" class="breed__img">
+                                <img src="Resources/Placeholder.png"  alt="" class="breed__img" id="breed__image">
                             </div>
                             
 
                             <div class="breed__data">
-                                <h1 class="breed__title">Name of breed</h1>
-                                <h3 class="breed__subtitle">Nickname or alternative title</h3>
-                                <p class="breed__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, 
-                                    dolorem? Consequuntur mollitia delectus commodi quis excepturi rerum maiores at ipsa.
+                                <h1 class="breed__title" id="breed__title"></h1>
+                                <h3 class="breed__subtitle" id="breed__subtitle"></h3>
+                                <p class="breed__description" id="breed__description">
                                 </p>
                             </div>
+                            
 
 
                         </div>
+
+                        <ul class="breed__list">
+                            <li>
+                                <a class="footer__item" id="breed__weight"></a>
+                            </li>
+                            <li>
+                                <a class="footer__item" id="breed__lifespan"></a>
+                            </li>
+                            <li>
+                                <a class="footer__item" id="breed__funfact"></a>
+                            </li>
+                            <li>
+                                <a class="footer__item" id="breed__identifier"></a>
+                            </li>
+                        </ul>
+
                     </div>
                 </section>
 
@@ -230,8 +251,8 @@
                 <div class="footer__bg">
                     <div class="footer__container container grid">
                         <div>
-                            <h1 class="footer__title">Placeholder</h1>
-                            <span class="footer__subtitle">Pet Info Website</span>
+                            <h1 class="footer__title">PetDB</h1>
+                            <span class="footer__subtitle">The database catered for your pets needs</span>
                         </div>
 
                         <ul class="footer__links">
@@ -255,7 +276,7 @@
                        
                     </div>
 
-                    <p class="footer__copy">&#169; Placeholder. All Rights Reserved</p>
+                    <p class="footer__copy">&#169; PetDB. All Rights Reserved</p>
                 </div>
             </footer>
 
