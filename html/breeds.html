@@ -4,14 +4,19 @@
             <!--Meta Tags-->
             <meta charset="UTF-15">
             <meta name="viewport" content="width=device-width , initial-scale=1.0">
-            
+
+            <!-- add icon link -->
+            <link rel = "icon" href = "../Resources/logo.jpg" type = "image/x-icon">
+
+            <title> Breeds </title>
+
             <!--Icons-->
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://kit.fontawesome.com/d36885d3d5.js" crossorigin="anonymous"></script>
 
             <!--Main CCS-->
-            <link rel="stylesheet" href="calender.css">
+            <link rel="stylesheet" href="../css/breeds.css">
         </head>
 
         <body>
@@ -24,7 +29,7 @@
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list grid">
                             <li class="nav__item">
-                                <a href="index.html" class="nav__link ">
+                                <a href="index.html" class="nav__link  active-link">
                                     <i class="uil uil-home nav__icon"></i> Home
                                 </a>
                             </li>
@@ -34,7 +39,7 @@
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="map.html" class="nav__link active-link">
+                                <a href="map.html" class="nav__link ">
                                     <i class="uil uil-file nav__icon"></i> Map
                                 </a>
                             </li>
@@ -71,9 +76,11 @@
                 <div class="description__container container grid">
                     <div class="description__content grid">
                         <div class="description__data">
-                            <h1 class="description__title">Map</h1>
+                            <h1 class="description__title">Placeholder</h1>
                             <p class="description__description">
-                                Our map function allows the user to display the nearest vets to their general location.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, necessitatibus 
+                                tempora officia doloribus est dolores dignissimos reiciendis accusantium ut asperiores ullam 
+                                reprehenderit ratione similique, fugiat voluptas accusamus quae eveniet laborum?
                             </p>
                     
                         </div>
@@ -81,23 +88,25 @@
                 </div>
             </section>
 
-            <div class="error-page">
-                <div>
-                  <!--h1(data-h1='400') 400-->
-                  <!--p(data-p='BAD REQUEST') BAD REQUEST-->
-                  <!--h1(data-h1='401') 401-->
-                  <!--p(data-p='UNAUTHORIZED') UNAUTHORIZED-->
-                  <!--h1(data-h1='403') 403-->
-                  <!--p(data-p='FORBIDDEN') FORBIDDEN-->
-                  <h1 data-h1="404">404</h1>
-                  <p data-p="NOT FOUND">NOT FOUND</p>
-                  <!--h1(data-h1='500') 500-->
-                  <!--p(data-p='SERVER ERROR') SERVER ERROR-->
+            <!--SearchBar-->
+            <div class="search_bar section" id="serach-bar">
+                <div class="search_bar_container container grid">
+                    <form action="">
+                        <input id="SearchBar" class="searchbar" type="text" placeholder="Search for name of breed....">
+                        <i class="fa fa-search "></i>
+                    </form>
                 </div>
-              </div>
-              <div id="particles-js"></div>
-              <!--a(href="#").back GO BACK-->
-              <br><br><br><br>  
+            </div>
+
+            <!--Breeds-->
+             
+            <section class="breed section" id="breed">
+                <div class="breed__container container grid" id="cards">
+                    
+
+                </div>
+            </section>
+
 
             </main>
 
@@ -137,11 +146,8 @@
                 </div>
             </footer>
 
-
             <!--Main JS-->
-            <script src="js.js"></script>
+            <script src="../javascript/js.js"></script>
+
         </body>
-
-
-
     </html>
