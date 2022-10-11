@@ -4,13 +4,17 @@
             <!--Meta Tags-->
             <meta charset="UTF-15">
             <meta name="viewport" content="width=device-width , initial-scale=1.0">
-            
+
+            <!-- add icon link -->
+            <link rel = "icon" href = "../Resources/logo.jpg" type = "image/x-icon">
+
+            <title> Home Page </title>
+
             <!--Icons-->
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-            <script src="https://kit.fontawesome.com/d36885d3d5.js" crossorigin="anonymous"></script>
 
             <!--Main CCS-->
-            <link rel="stylesheet" href="illness.css">
+            <link rel="stylesheet" href="../css/index.css">
         </head>
 
         <body>
@@ -18,7 +22,7 @@
             <header class="header" id="header">
                 <nav class="nav container">
 
-                    <a href="index.html" class="nav__logo">Placeholder</a>
+                    <a href="index.html" class="nav__logo">PetsDB</a>
 
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list grid">
@@ -47,10 +51,10 @@
                                     <i class="uil uil-scenery nav__icon"></i> Sign In
                                 </a>
                             </li>
-                            
+
                             <i class="uil uil-times nav__close" id="nav-close"></i>
                         </div>
-    
+
                         <div class="nav_btns">
                             <!--Theme Change-->
                             <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -65,36 +69,79 @@
             <!--Main-->
             <main class="main">
 
-                <!--Illness-->
-                <section class="Illness section" id="Illness">
-                    <div class="Illness__container container grid">
-
-                        <div class="illness__data">
-                            <h1 class="illness__title">Illness</h1>
-                            <h3 class="illness__subtitle">Brief Description</h3>
-                            <p class="illness__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Mollitia quis magni eum, est atque aspernatur nisi! Expedita asperiores eum sed natus aut 
-                                doloribus, libero ipsum hic error tempora dolores consequuntur eligendi iure obcaecati tempore 
-                                quidem necessitatibus deserunt facilis aliquid accusamus?
+            <!--Description-->
+            <section class="description section" id="description">
+                <div class="description__container container grid">
+                    <div class="description__content grid">
+                        <div class="description__data">
+                            <h1 class="description__title">The Pet Database</h1>
+                            <h3 class="description__subtitle">A collection of pet related critical information</h3>
+                            <p class="description__description">
+                                The Pet Database was design to provide high quality, critical and crucial information related to some of
+                                South Africa's most popular pets. We try to help other pet owners identify a broad range of issues from
+                                stated symptoms that may provide a better insight into their pets well being and then allow them to make and 
+                                informed decision on whether their pet need's professional medical care or not.
                             </p>
+                    
                         </div>
-
-                        <div class="illness__data">
-                            <h1 class="illness__title">Treatment</h1>
-                            <h3 class="illness__subtitle">Brief Description</h3>
-                            <p class="illness__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Mollitia quis magni eum, est atque aspernatur nisi! Expedita asperiores eum sed natus aut 
-                                doloribus, libero ipsum hic error tempora dolores consequuntur eligendi iure obcaecati tempore 
-                                quidem necessitatibus deserunt facilis aliquid accusamus?
-                            </p>
-                        </div>
-
                     </div>
-                </section>
-                
+                </div>
+            </section>
+
+            <!--Cards-->
+            <section class="card section" id="card">
+                <div class="card__container container grid">
+                    <div class="dog" id="dog">
+                        <a href="breeds.html">
+                            <script>
+                                const dog = document.getElementById('dog');
+                                dog.addEventListener('click', () => {   
+                                    localStorage.setItem('data', "dogData");
+                                });  
+                            </script>
+                            <img src="../Resources/Dog.jpg"  alt="" class="card_image">
+                        </a>
+                    </div>
+
+                    <div class="cat" id="cat">
+                        <a href="breeds.html">
+                            <script>
+                                const cat = document.getElementById('cat');
+                                cat.addEventListener('click', () => {   
+                                    localStorage.setItem('data', "catData");
+                                });  
+                            </script>
+                            <img src="../Resources/Cat.jpg"  alt="" class="card_image">
+                        </a>
+                    </div>
+
+                    <div class="bird" id="bird">
+                        <a href="breeds.html">
+                            <script>
+                                const bird = document.getElementById('bird');
+                                bird.addEventListener('click', () => {   
+                                    localStorage.setItem('data', "birdData");
+                                });  
+                            </script>
+                            <img src="../Resources/Bird.jpg"  alt="" class="card_image">
+                        </a>
+                    </div>
+
+                    <div class="rodent" id="rodent">
+                        <a href="breeds.html">
+                            <script>
+                                const rodent = document.getElementById('rodent');
+                                rodent.addEventListener('click', () => {   
+                                    localStorage.setItem('data', "rodentData");
+                                });  
+                            </script>
+                            <img src="../Resources/Hamster.jpg"  alt="" class="card_image">
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
             </main>
-
-
 
             <!--Footer-->
             <footer class="footer">
@@ -130,11 +177,8 @@
                 </div>
             </footer>
 
-
             <!--Main JS-->
-            <script src="js.js"></script>
+            <script src="../javascript/js.js"></script>
+
         </body>
-
-
-
     </html>
