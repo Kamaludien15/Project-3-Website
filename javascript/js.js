@@ -73,7 +73,7 @@ const dogData = [{
     Lifespan: "10 - 13",
     Temperament: "African wild dogs live in packs that are usually dominated by a monogamous breeding pair.",
     FunFact: "Also known as the painted dog!",
-    photo: "Resources/AfricanWildDog.jpg",
+    photo: "../Resources/AfricanWildDog.jpg",
     tags: "1",
 
 },
@@ -85,7 +85,7 @@ const dogData = [{
     Lifespan: "10 - 12",
     Temperament: "Smart, Confident, Obedient, Territorial",
     FunFact: "Boerboels love their human families and are especially known for being protectors of their children.",
-    photo: "Resources/Boerboel.jpg",
+    photo: "../Resources/Boerboel.jpg",
     tags: "2",
 
 },
@@ -97,7 +97,7 @@ const dogData = [{
     Lifespan: "8 - 15",
     Temperament: "Friendly, loyal, playful, affectionate, and slightly stubborn sometimes",
     FunFact: "These dogs are very energetic and would be up for a game at any given point of time",
-    photo: "Resources/American Pitbull.jpg",
+    photo: "../Resources/American Pitbull.jpg",
     tags: "3",
 
 },
@@ -109,7 +109,7 @@ const dogData = [{
     Lifespan: "13 - 15",
     Temperament: "Strong, friendly and devoted",
     FunFact: "The Boston Terrier is people-oriented, always preferring to be with you.",
-    photo: "Resources/Boston.jpg",
+    photo: "../Resources/Boston.jpg",
     tags: "4",
 
 },
@@ -121,7 +121,7 @@ const dogData = [{
     Lifespan: "10 - 14",
     Temperament: "Friendly and alert but stubborn",
     FunFact: "Bull terriers are extremely powerful dogs.",
-    photo: "Resources/Bull Terrier.jpg",
+    photo: "../Resources/Bull Terrier.jpg",
     tags: "5",
 
 },
@@ -133,7 +133,7 @@ const dogData = [{
     Lifespan: "8 - 10",
     Temperament: "Gentle, calm and affectionate",
     FunFact: "They were bred to fight bulls",
-    photo: "Resources/Bulldog.jpg",
+    photo: "../Resources/Bulldog.jpg",
     tags: "6",
 
 },
@@ -145,7 +145,7 @@ const dogData = [{
     Lifespan: "10 - 12",
     Temperament: "Energetic, Obedient",
     FunFact: "The Doberman is one of the only dog breeds that has kept the name of its founder.",
-    photo: "Resources/Doberman.jpg",
+    photo: "../Resources/Doberman.jpg",
     tags: "7",
 
 },
@@ -157,7 +157,7 @@ const dogData = [{
     Lifespan: "10-12",
     Temperament: "Highly active and fearless dogs!",
     FunFact: "German Shepherds were tasked with watching over flocks of sheep and herding them from field to field.",
-    photo: "Resources/German Shepard.jpg",
+    photo: "../Resources/German Shepard.jpg",
     tags: "8",
 
 },
@@ -169,7 +169,7 @@ const dogData = [{
     Lifespan: "12-13",
     Temperament: "Trusting, kind and gentle!",
     FunFact: "Golden Retrievers trace their history back to Scotland.",
-    photo: "Resources/Golden Retriever.jpg",
+    photo: "../Resources/Golden Retriever.jpg",
     tags: "9",
 
 },
@@ -181,7 +181,7 @@ const dogData = [{
     Lifespan: "11-14",
     Temperament: "Charming, Clever, Playful, Mischievous, Stubborn, Docile, Sociable, Affectionate, Attentive, Loving, Quiet, Calm.",
     FunFact: "They were bred to be lap dogs.",
-    photo: "Resources/Pug.jpg",
+    photo: "../Resources/Pug.jpg",
     tags: "10",
 
 },
@@ -193,7 +193,7 @@ const dogData = [{
     Lifespan: "12",
     Temperament: "Loyal, affectionate, calm, quiet, sensitive and protective",
     FunFact: "The Rottweiler is thought to be one of the oldest breeds of dog in the world, dating back to Ancient Rome.",
-    photo: "Resources/Rottweiler.jpg",
+    photo: "../Resources/Rottweiler.jpg",
     tags: "11",
 
 }
@@ -205,7 +205,7 @@ const dogData = [{
 //     Lifespan: "",
 //     Temperament: "",
 //     FunFact: "",
-//     photo: "Resources/Placeholder.png",
+//     photo: "../Resources/Placeholder.png",
 //     tags: "",
 
 // }
@@ -218,7 +218,7 @@ const catData = [{
     Lifespan: "13 - 15",
     Temperament: "Intelligent and curious",
     FunFact: "The oldest breed of cat in the world!",
-    photo: "Resources/Abyssinian.jpg",
+    photo: "../Resources/Abyssinian.jpg",
     tags: "",
 
 },
@@ -229,7 +229,7 @@ const catData = [{
 //     Lifespan: "",
 //     Temperament: "",
 //     FunFact: "",
-//     photo: "Resources/Placeholder.png",
+//     photo: "../Resources/Placeholder.png",
 //     tags: "",
 
 // }
@@ -242,9 +242,9 @@ function cardTemplate(card) {
     return `
 
     <div id="${card.Breed}" onclick="saveDogBreed(this.id)" id="${card.Breed}">
-        <a href="symptoms.html">
+        <a href="../html/symptoms.html">
             <div class="breedCard">
-                <img src="${card.photo}"  alt="" class="breed_image" id="${card.Breed}">
+                <img src="../Resources/${card.photo}"  alt="" class="breed_image" id="${card.Breed}">
                 <div class="card_details" id="${card.Breed}">
                     <p class="breed__title">${card.Breed}</p>
                     <p class="breed__description">${card.Description}</p>
