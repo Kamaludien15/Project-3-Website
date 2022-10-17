@@ -110,6 +110,13 @@ body{
     color: var(--text-color);
 }
 
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
 h1,h2,h3,h4{
     color:var(--title-color);
     font-weight: var(--font-semi-bold);

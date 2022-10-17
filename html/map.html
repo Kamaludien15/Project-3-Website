@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width , initial-scale=1.0">
 
             <!-- add icon link -->
-            <link rel = "icon" href = "../Resources/logo.jpg" type = "image/x-icon">
+            <link rel = "icon" href = "../Resources/logo.png" type = "image/x-icon">
 
             <title> Map </title>
 
@@ -17,6 +17,11 @@
 
             <!--Main CCS-->
             <link rel="stylesheet" href="../css/calender.css">
+            <link rel="stylesheet" href="../css/map.css">
+
+            <!--JS-->
+            <script type="module" src="../javascript/map.js"></script>
+
         </head>
 
         <body>
@@ -69,7 +74,7 @@
             </header>
 
             <!--Main-->
-            <main class="main">
+            <main id="main">
 
             <!--Description-->
             <section class="description section" id="description">
@@ -86,20 +91,9 @@
                 </div>
             </section>
 
-            <div class="error-page">
-                <div>
-                  <!--h1(data-h1='400') 400-->
-                  <!--p(data-p='BAD REQUEST') BAD REQUEST-->
-                  <!--h1(data-h1='401') 401-->
-                  <!--p(data-p='UNAUTHORIZED') UNAUTHORIZED-->
-                  <!--h1(data-h1='403') 403-->
-                  <!--p(data-p='FORBIDDEN') FORBIDDEN-->
-                  <h1 data-h1="404">404</h1>
-                  <p data-p="NOT FOUND">NOT FOUND</p>
-                  <!--h1(data-h1='500') 500-->
-                  <!--p(data-p='SERVER ERROR') SERVER ERROR-->
-                </div>
-              </div>
+            <div id="map">
+
+            </div>
               <div id="particles-js"></div>
               <!--a(href="#").back GO BACK-->
               <br><br><br><br>  
@@ -144,6 +138,10 @@
 
             <!--Main JS-->
             <script src="../javascript/js.js"></script>
-
+            <script
+                    async
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS-Q52lEzN4M2DxCki1t8X7UhkXuuHIWM&callback=initMap&v=weekly"
+                    defer
+            ></script>
         </body>
     </html>
