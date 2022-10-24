@@ -302,7 +302,7 @@ img{
 }
 
 .description__description{
-    margin-bottom: var(--mb-2);
+    `
     text-align: center;
 }
 
@@ -372,7 +372,7 @@ form:hover .fa {
 
 /*---Breeds---*/
 .breed__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
 }
 
@@ -391,7 +391,7 @@ form:hover .fa {
 }
 
 .breed_image{
-    width: 150px;
+    width: 10rem;
     border-radius: 10px;
 }
 
@@ -535,6 +535,13 @@ form:hover .fa {
         column-gap: 0;
     }
 
+    .breed__container{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    
+
     
 
 }
@@ -549,6 +556,13 @@ form:hover .fa {
     input{
         font-size: 2rem;
     }
+
+    
+    .breed__container{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
 
 }
 
@@ -620,6 +634,11 @@ form:hover .fa {
         margin-top: 4.5rem;
     }
 
+    .breed__container{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
 
 }
 
@@ -633,6 +652,11 @@ form:hover .fa {
         padding: 0;
     }
 
+
+    .breed__container{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
     
 }
 
@@ -642,5 +666,9 @@ form:hover .fa {
         max-width: 950px;
     }
     
+    .breed__container{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
     
 }

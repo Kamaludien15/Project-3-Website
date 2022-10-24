@@ -455,6 +455,14 @@ form:hover .fa {
     color: var(--first-color-alt);
 }
 
+.about_us_img{
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.description__content{
+    align-items: center;
+}
 /*---Footer---*/
 
 .footer__container{

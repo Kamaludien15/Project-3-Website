@@ -73,7 +73,8 @@
                 <!--Breed-->
                 <script>
                     window.onload = function() {
-                        loadDogBreedData();
+                        loadAnimalBreedData();
+                        loadSymptonCards();
                     };
                 </script>
                 <section class="breed section" id="breed">
@@ -87,7 +88,9 @@
 
                             <div class="breed__data">
                                 <h1 class="breed__title" id="breed__title"></h1>
-                                <h3 class="breed__subtitle" id="breed__subtitle"></h3>
+                                <p class="breed__description" ><u>Temperament</u></p>
+                                <p class="breed__description" id="breed__subtitle"></p>
+                                <p class="breed__description"><u>Brief Description</u></p>
                                 <p class="breed__description" id="breed__description">
                                 </p>
                             </div>
@@ -96,12 +99,21 @@
 
                         </div>
 
-                        <ul class="breed__list">
+                        <ul class="breed__list" id="breed__list">
                             <li>
                                 <a class="footer__item" id="breed__weight"></a>
                             </li>
                             <li>
+                                <a class="footer__item" id="breed__length">s</a>
+                            </li>
+                            <li >
+                                <a class="footer__item" id="breed__wingspan">s</a>
+                            </li>
+                            <li>
                                 <a class="footer__item" id="breed__lifespan"></a>
+                            </li>
+                            <li >
+                                <a class="footer__item" id="breed__habitat">s</a>
                             </li>
                             <li>
                                 <a class="footer__item" id="breed__funfact"></a>
@@ -116,131 +128,19 @@
 
                 <!--symptoms-->
                 <section class="symptom section" id="symptom">
-                    <div class="symptom__container container grid">
 
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
+                    <h3 class="description__description">
+                        Please check the boxes for symptom's that apply to your pets illness.
+                    </h3>
 
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                                
-                            </div>
-
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                                
-                            </div>
+                    <div class="symptom__container container grid" id="symptomCards">
                             
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
 
-                        
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
-
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
-
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
-
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
-
-                            <div class="symptomCard">
-                                <div class="card_details">
-                                    <p class="symptom__title">Name</p>
-                                    <p class="symptom__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non.</p>
-                                </div>
-                                <div class="checkbox__card">
-                                    <label class="checkbox__container">
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </div>
-                            </div>
+                            
                     </div>
 
                     <div class="search__button container">
-                        <a href="results.html" class="button">
+                        <a href="results.html" class="button" onclick="saveFilters()">
                             Search<i class="fa fa-search button__icon"></i>
                         </a>
                     </div>

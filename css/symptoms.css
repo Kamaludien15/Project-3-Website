@@ -124,8 +124,8 @@ a{
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+    
+    
 }
 
 /*---Reusable CSS Classes---*/
@@ -336,16 +336,24 @@ img{
 
 
 .breed__img{
-    width: 400px;
     border-radius: 20px;
     padding-right: 2rem;
 }
 
+.breed__img{
+    width: 20rem;
+}
+
 .breed__data{
     grid-column: 1/3;
+    
 }
 
 .breed__title{
+    font-size: var(--big-font-size);
+}
+
+.sympton__title{
     font-size: var(--big-font-size);
 }
 
@@ -353,11 +361,11 @@ img{
     font-size: var(--h3-font-size);
     color: var(--text-color);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
+    
 }
 
 .breed__description{
-    margin-bottom: var(--mb-2);
+    font-size: 1.1rem;
 }
 
 /*---Symptom---*/
@@ -381,11 +389,16 @@ img{
     padding: 5px;
     margin:5px;
     border-radius: 10px;
+    display: flex;
+  align-items: center;
 }
 
 .symptom__title{
     font-size: medium;
     font-weight: 700;
+    align-items: center;
+    width: 8rem;
+    text-align: center;
 }
 
 .search__button{
@@ -394,9 +407,13 @@ img{
     
 }
 
+.symptom__container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
 /*---Checkbox*/
 .checkbox__card{
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .checkbox__container {
@@ -595,6 +612,7 @@ img{
     }
 
     
+    
 
 }
 
@@ -622,6 +640,11 @@ img{
         justify-self: center;
     }
 
+    
+
+    
+
+    
 }
 
 @media screen and (min-width: 768px){
@@ -629,6 +652,7 @@ img{
     body{
         margin: 0 0 0 0;
     }
+    
     
     .container{
         margin-left: auto;
@@ -648,6 +672,7 @@ img{
         bottom: initial;
     }
 
+    
     .header,
     .main,
     .footer__container{
@@ -725,7 +750,15 @@ img{
         padding: 0;
     }
 
+    .breed__img{
+        width: 25rem;
+    }
     
+    .symptom__container{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -734,6 +767,13 @@ img{
         max-width: 950px;
     }
     
+    .breed__img{
+        width: 30rem;
+    }
 
+    .symptom__container{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
     
 }

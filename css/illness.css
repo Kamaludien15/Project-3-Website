@@ -312,6 +312,7 @@ img{
     background-color: var(--first-color);
     border-radius: 25px;
     padding: 30px;
+    margin-bottom: 2rem;
 }
 
 .illness__title{
@@ -328,6 +329,8 @@ img{
 .illness__description{
     margin-bottom: var(--mb-2);
 }
+
+
 
 /*---Buttons---*/
 
@@ -370,6 +373,8 @@ img{
     background-color: transparent;
     color: var(--first-color-alt);
 }
+
+
 
 /*---Footer---*/
 
